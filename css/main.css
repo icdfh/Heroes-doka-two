@@ -1,0 +1,246 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+:root {
+	--index: calc(1vw + 1vh);
+	--color-header: #f4efec;
+	--color-text: #cdc6c3;
+	--gallery-gap: calc(var(--index) * 7.5)
+}
+@font-face {
+	font-family: raleway-c;
+	src: url(../fonts/raleway-regular.woff2);
+}
+@font-face {
+	font-family: outfit-c;
+	src: url(../fonts/outfit-regular.woff2);
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: outfit-c;
+}
+/* will-change */
+.content, .hero, .main-header, .gallery > * {
+	will-change: transform;
+}
+body {
+	background-image: url(../img/bg.jpg);
+	background-size: 50px;
+	color: #fafafa;
+	font-family: raleway-c;
+	overflow-x: hidden;
+}
+.hero {
+	width: calc(var(--index) * 36);
+	position: absolute;
+	left: 37vw;
+	top: 22vh;
+	z-index: -1;
+}
+.main-header {
+	height: 100vh;
+}
+.container {
+	padding: 0 7vw;
+}
+.main-title {
+	font-size: calc(var(--index) * 8);
+	position: absolute;
+	width: min-content;
+	bottom: 12vh;
+	line-height: .9;
+}
+.gallery {
+	display: flex;
+	padding: calc(var(--index) * 8) 0;
+}
+.gallery > * {
+	flex: 1;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+.gallery__item {
+	max-width: calc(var(--index) * 21);
+	margin-bottom: var(--gallery-gap);
+	max-height: 180vh;
+	border-radius: 8px;
+}
+.gallery__left {
+	margin-top: calc(var(--gallery-gap) * 1.75);
+}
+.gallery__right .gallery__item {
+	margin: 0;
+	margin-top: var(--gallery-gap);
+}
+.text-block {
+	color: var(--color-text);
+	position: relative;
+}
+.text-block__h {
+	font-size: 2rem;
+	line-height: 2.4rem;
+	color: var(--color-header);
+	margin-bottom: 1.5rem;
+}
+.text-block__p {
+	line-height: 1.75;
+}
+a {
+	display: inline-block;
+	padding: 10px 20px;
+	background-color: #ad00f7; /* Цвет фона */
+	color: #fff; /* Цвет текста */
+	text-decoration: none; /* Убираем подчеркивание */
+	border-radius: 5px; /* Закругленные углы */
+	font-size: 18px; /* Размер шрифта */
+	transition: background-color 0.3s; /* Плавное изменение цвета фона */
+	margin-top: 520px;
+}
+
+/* Стили для наведения курсора на ссылку */
+a:hover {
+	background-color: #b92dfa; /* Новый цвет фона при наведении курсора */
+}
+
+
+.details-button-1{
+	display: block;
+	background-color: #3498db;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	padding: 10px 20px;
+	font-size: 18px;
+	cursor: pointer;
+	transition: background-color 0.3s;
+	position: absolute;
+	bottom: 2400px;
+}
+.details-button-2{
+	display: block;
+	background-color: #3498db;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	padding: 10px 20px;
+	font-size: 18px;
+	cursor: pointer;
+	transition: background-color 0.3s;
+	position: absolute;
+	bottom: 1575px;
+}
+.details-button-3{
+	display: block;
+	background-color: #3498db;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	padding: 10px 20px;
+	font-size: 18px;
+	cursor: pointer;
+	transition: background-color 0.3s;
+	position: absolute;
+	bottom: 450px;
+}
+.details-button-4{
+	display: block;
+	background-color: #3498db;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	padding: 10px 20px;
+	font-size: 18px;
+	cursor: pointer;
+	transition: background-color 0.3s;
+	position: absolute;
+	bottom: 2100px;
+}
+.details-button-5{
+	display: block;
+	background-color: #3498db;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	padding: 10px 20px;
+	font-size: 18px;
+	cursor: pointer;
+	transition: background-color 0.3s;
+	position: absolute;
+	bottom: 1030px;
+}
+.details-button-6{
+	display: block;
+	background-color: #3498db;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	padding: 10px 20px;
+	font-size: 18px;
+	margin-top: 1px; /* Измените это значение margin по мере необходимости */
+	cursor: pointer;
+	transition: background-color 0.3s;
+	position: absolute;
+	bottom: 5%;
+}
+.details-button-1:hover{
+	background-color: #2079b3;
+}
+.details-button-2:hover{
+	background-color: #2079b3;
+}
+.details-button-3:hover{
+	background-color: #2079b3;
+}
+.details-button-4:hover{
+	background-color: #2079b3;
+}
+.details-button-5:hover{
+	background-color: #2079b3;
+}
+.details-button-6:hover{
+	background-color: #2079b3;
+}
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.popup {
+    background: #4e4e4e7d;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    max-width: 80%;
+    margin: auto;
+    margin-top: 20px; /* Отступ сверху */
+    margin-bottom: 20px; /* Отступ снизу */
+}
+
+.close-button {
+    cursor: pointer;
+    background: #ff0000;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	
+}
+
+.details-button {
+    cursor: pointer;
+}
+
+

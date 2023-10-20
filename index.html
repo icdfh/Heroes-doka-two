@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Document</title>
+
+	<script src="libs/gsap/gsap.min.js" defer></script>
+	<script src="libs/gsap/ScrollTrigger.min.js" defer></script>
+	<script src="libs/gsap/ScrollSmoother.min.js" defer></script>
+
+	<link rel="stylesheet" href="css/main.css">
+	<script src="js/app.js" defer></script>
+
+</head>
+<body>
+
+	<div class="wrapper">
+		<div class="content">
+
+			<header class="hero-section">
+				<img data-speed=".6" class="hero" src="img/hero.png" alt="Alt" >
+				<div class="container">
+					<div data-speed=".75" class="main-header">
+						<h1 class="main-title">my favourite heroes</h1>
+					</div>
+				</div>
+			</header>
+		
+			<div class="portfolio">
+				<div class="container">
+					<main class="gallery">
+	
+						<div data-speed=".9" class="gallery__left">
+		
+							
+								  <img class="gallery__item" src="img/work/1.png">
+								  <button class="details-button-1" onclick="openPopup('popup1')">Details</button>
+							
+							<img class="gallery__item" src="img/work/2.jpg" alt="Alt">
+							<button class="details-button-2" onclick="openPopup('popup2')">Details</button>
+		
+							<div class="text-block gallery__item">
+								<h2 class="text-block__h">Mid lane heroes</h2>
+								<p class="text-block__p">Your main priority as a mid-laner in Dota 2 is to shut down the enemy and gain enough farm so that you can work with your team in the mid-game</p>
+							</div>
+		
+							<img class="gallery__item" src="img/work/6.jpg" alt="Alt">
+							<button class="details-button-6" onclick="openPopup('popup6')">Details</button>
+		
+						</div>
+
+						<div data-speed="1.1" class="gallery__right">
+		
+							<div class="text-block gallery__item">
+								<h2 class="text-block__h">Carry heroes</h2>
+								<p class="text-block__p">In Dota 2, carry heroes are called position one because they have the highest priority of gold and are expected to consume most of the team's resources and space </p>
+							</div>
+		
+							<img class="gallery__item" src="img/work/4.jpg" alt="Alt">
+							<button class="details-button-4" onclick="openPopup('popup4')">Details</button>
+							<img class="gallery__item" src="img/work/5.jpg" alt="Alt">
+							<button class="details-button-5" onclick="openPopup('popup5')">Details</button>
+							<img class="gallery__item" src="img/work/3.jpg" alt="Alt">
+							<button class="details-button-3" onclick="openPopup('popup3')">Details</button>
+							<a href="map.html">CHECK NEW MAP</a>
+							  
+						</div>
+
+					</main>
+				</div>
+			</div>
+
+		</div>
+		<div class="popup-overlay" id="popup1">
+        <div class="popup">
+            <h2 class="popup-title">Anti-Mage</h2>
+			<img src="img/magina/antimage.webp"/>
+			<img src="img/magina/stats.png"/ style="margin-bottom: 200px;">
+            <p class="popup-description">
+				Anti-Mage was introduced into DotA Allstars using the model of one of the Night Elf heroes, 
+				the Demon Hunter. It remains so to this day and bears the name Magina. 
+				Moreover, according to DotA lore, he is the twin brother of the hero Terrorblade.</p>
+				<img src="img/magina/manabreak.webp"/>
+				<img src="img/magina/blink.jpg"/>
+				<img src="img/magina/counterspell.webp"/>
+				<img src="img/magina/manavoid.jpg"/>
+            <button class="close-button" onclick="closePopup('popup1')">Close</button>
+        </div>
+    </div>
+
+    <div class="popup-overlay" id="popup2">
+        <div class="popup">
+            <h2 class="popup-title">Muerta</h2>
+			<img src="img/muerta-q/muerta.png"/ width="600px">
+			<img src="img/muerta-q/stats2.png"/style="margin-bottom: 200px;">
+            <p class="popup-description">Muerta is a carry hero who can be in either the first or second position. She is quite an unusual character, attacking multiple targets at once and bringing death to even those who seemed to have outwitted her.</p>
+			<img src="img/muerta-q/deadshot.png"/>
+			<img src="img/muerta-q/calling.png"/>
+			<img src="img/muerta-q/gunslinger.png"/>
+			<img src="img/muerta-q/pierceofveil.png"/>
+            <button class="close-button" onclick="closePopup('popup2')">Close</button>
+        </div>
+    </div>
+	<div class="popup-overlay" id="popup3">
+        <div class="popup">
+            <h2 class="popup-title">Void Spirit</h2>
+			<img src="img/voidspirit/spirit.webp"/>
+			<img src="img/voidspirit/stats3.png"/style="margin-bottom: 200px;>
+            <p class="popup-description">Even other spirits do not understand the aspirations and plans of their elder brother Inaya, the spirit of emptiness. He keeps secrets that can split the consciousness of a mortal, and watches the movements of the universe with incomprehensible sagacity, for the trained supporting servants to carry out his revolution; and only if he decides that no one else can direct reality on the right path, will he leave the Hidden Temple and find himself in the material world.</p>
+			<img src="img/voidspirit/remnant.png"/>
+			<img src="img/voidspirit/dissimilate.png"/>
+			<img src="img/voidspirit/resonant_pulse.png"/>
+			<img src="img/voidspirit/astral_step.png"/>
+            <button class="close-button" onclick="closePopup('popup3')">Close</button>
+        </div>
+    </div>
+	<div class="popup-overlay" id="popup4">
+        <div class="popup">
+            <h2 class="popup-title">Juggernaut</h2>
+			<img src="img/jugger/jugg.webp"/>
+			<img src="img/jugger/stats4.png"/style="margin-bottom: 200px;>
+            <p class="popup-description">No one has ever seen the face behind Yurnero's mask. One can only guess what he looks like. One day, Yurnero challenged a dishonest lord and was expelled from the ancient Island of Masks. Kara saved his life: very soon the island disappeared under the waves, driven by vengeful magic.</p>
+			<img src="img/jugger/blade-fury.png"/>
+			<img src="img/jugger/healward.webp"/>
+			<img src="img/jugger/bladedance.jpg"/>
+			<img src="img/jugger/omnislash.png"/>
+            <button class="close-button" onclick="closePopup('popup4')">Close</button>
+        </div>
+    </div>
+	<div class="popup-overlay" id="popup5">
+        <div class="popup">
+            <h2 class="popup-title">Invoker(Kael)</h2>
+			<img src="img/kael/invoker.webp"/>
+			<img src="img/kael/stats5.png"/ style="margin-bottom: 200px;>
+            <p class = "popup-description">
+			Magic in its earliest, one might even say its most powerful,
+			 form has always been primarily the art of memory. 
+			 It did not require techniques, wands or other accessories,
+			  with the exception of the mind of the sorcerer himself.
+			</p>
+			<img src="img/kael/quas.webp"/>
+			<img src="img/kael/wex.webp"/>
+			<img src="img/kael/exort.webp"/>
+			<img src="img/kael/invoke.png"/>
+            <button class="close-button" onclick="closePopup('popup5')">Close</button>
+        </div>
+    </div>
+	<div class="popup-overlay" id="popup6">
+        <div class="popup">
+            <h2 class="popup-title">Earth Spirit</h2>
+			<img src="img/panda/zemelya.png"/ width="620px">
+			<img src="img/panda/stats6.png"/style="margin-bottom: 200px;>
+            <p class="popup-description">Deep among the rocks and cliffs of Povershye there is a mine abandoned by miners, where sacred jade was mined a long time ago. Once upon a time, a statue of the great general Kaolin was carved from this rare material, and it lay at the head of the grave of ten thousand stone warriors: soldiers and priests, jesters and acrobats - the masters carved a great many statues and lowered them into the dark embrace of the soil forever.</p>
+			<img src="img/panda/smash.png"/>
+			<img src="img/panda/rollingthunder.jpg"/>
+			<img src="img/panda/geogrip.png"/>
+			<img src="img/panda/stonecaller.png"/>
+			<img src="img/panda/magnetize.png"/>
+            <button class="close-button" onclick="closePopup('popup6')">Close</button>
+        </div>
+		
+    </div>
+	
+	
+</body>
+</html>
